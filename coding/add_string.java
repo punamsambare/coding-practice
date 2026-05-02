@@ -3,18 +3,17 @@ class Solution {
         if(num1==null)return num2;
         if(num2==null)return num1;
 
-     int i=num1.length()-1;
-     int j=num2.length()-1;
-     int carry=0;
-     StringBuffer str=new StringBuffer();
-    while(i>=0 || j>=0)
-    {
-        int number1=0,number2=0,sum=0;
-       if(i>=0)
-       {
-         number1=num1.charAt(i)-'0';
-         i--;
-       }
+    int i = num1.length() - 1;
+    int j = num2.length() - 1;
+    int carry = 0;
+    
+    StringBuffer str = new StringBuffer();
+    while (i >= 0 || j >= 0) {
+      int number1 = 0, number2 = 0, sum = 0;
+      if (i >= 0) {
+        number1 = num1.charAt(i) - '0';
+        i--;
+      }
 
        if(j>=0)
        {
